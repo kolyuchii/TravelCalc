@@ -1,7 +1,7 @@
 using Toybox.WatchUi as Ui;
 
 class TravelCalcView extends Ui.SimpleDataField {
-	const MIN_AVR_SPEED = 4.16667; // meters per second 15km/h
+	const MIN_AVR_SPEED = Application.getApp().getProperty("myAverageSpeed"); // meters per second
 	var counter = 0;
 
     // Set the label of the data field here.
