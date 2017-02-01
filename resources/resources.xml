@@ -1,44 +1,13 @@
 <resources>
     <properties>
-        <property id="upperRightValue" type="number">0</property>
-        <property id="bottomValue" type="number">4</property>
+        <property id="myAverageSpeed" type="number">15</property>
     </properties>
     <strings>
-        <string id="AppName">CyclistChartsField</string>
-        <string id="elevationChart">Elevation chart</string>
-        <string id="elevation">Elevation</string>
-        <string id="distance">Distance</string>
-        <string id="avgHR">Average HR</string>
-        <string id="avgPWR">Average PWR</string>
-        <string id="distanceChart">Distance and elevation chart</string>
-        <string id="avgHRChart">Average HR chart</string>
-        <string id="avgPWRChart">Average PWR chart</string>
-        <string id="cal">Calories</string>
-        <string id="UpperRightTitle">Upper right value</string>
-        <string id="UpperRightPrompt">Upper right</string>
-        <string id="BottomTitle">Bottom value</string>
-        <string id="BottomPrompt">Bottom</string>
+        <string id="averageSpeedTitle">Average Speed</string>
     </strings>
     <settings>
-        <setting propertyKey="upperRightValue" title="UpperRightTitle"
-                 prompt="UpperRightPrompt">
-            <settingConfig type="list">
-                <listEntry value="0">@Strings.distanceChart</listEntry>
-                <listEntry value="1">@Strings.elevationChart</listEntry>
-                <listEntry value="2">@Strings.avgHRChart</listEntry>
-                <listEntry value="3">@Strings.avgPWRChart</listEntry>
-            </settingConfig>
-        </setting>
-        <setting propertyKey="bottomValue" title="BottomTitle" prompt="BottomPrompt">
-            <settingConfig type="list">
-                <listEntry value="0">@Strings.distance</listEntry>
-                <listEntry value="1">@Strings.elevation</listEntry>
-                <listEntry value="2">@Strings.avgHR</listEntry>
-                <listEntry value="3">@Strings.avgPWR</listEntry>
-                <listEntry value="4">@Strings.cal</listEntry>
-            </settingConfig>
+        <setting propertyKey="@Properties.myAverageSpeed" title="@Strings.averageSpeedTitle">
+            <settingConfig type="numeric" required="true" min="0" max="99" />
         </setting>
     </settings>
-    <!--
-        <bitmap id="LauncherIcon" filename="images/launcher_icon.png" /> -->
 </resources>
