@@ -3,7 +3,7 @@
         <property id="myAverageSpeed" type="number">15</property>
     </properties>
     <strings>
-        <string id="averageSpeedTitle">Average Speed</string>
+        <string id="averageSpeedTitle">Minimal Average Speed</string>
     </strings>
     <settings>
         <setting propertyKey="@Properties.myAverageSpeed" title="@Strings.averageSpeedTitle">

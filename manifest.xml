@@ -2,7 +2,8 @@
     <iq:application entry="TravelCalcApp" id="AF20ED7FF3D2482F9878451A3D76812A" launcherIcon="@Drawables.LauncherIcon" minSdkVersion="1.2.0" name="@Strings.AppName" type="datafield">
 
         <iq:products>
-            <iq:product id="square_watch"/>
+            <iq:product id="tall_watch"/>
+            <iq:product id="round_watch"/>
             <iq:product id="fr630"/>
             <iq:product id="fr235"/>
             <iq:product id="fr735xt"/>
